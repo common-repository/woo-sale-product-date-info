@@ -1,0 +1,61 @@
+#motpr355_woo_sale_product_date_info .motpr355_woo_sale_product_date_info_classic {
+    background: black;
+    color: white;
+    border-radius: 25px;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#motpr355_woo_sale_product_date_info .wp-picker-holder {
+    position: absolute;
+}
+
+#motpr355_woo_sale_product_date_info p > span:first-child {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 320px;
+}
+
+#motpr355_woo_sale_product_date_info p > span:last-child {
+    display: table-cell;
+}
+
+#motpr355_woo_sale_product_date_info p > span > label {
+    display: block;
+}
+
+#motpr355_woo_sale_product_date_info #motpr355_woo_sale_product_date_info_activate_arrow {
+    position: relative;
+    display: none;
+    animation: motpr355_woo_sale_product_date_info_activate_arrow_blink 1s infinite;
+}
+
+@keyframes motpr355_woo_sale_product_date_info_activate_arrow_blink {
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
+}
+
+#motpr355_woo_sale_product_date_info #motpr355_woo_sale_product_date_info_activate_arrow > span:first-child {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-right: 32px solid red;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+}
+
+#motpr355_woo_sale_product_date_info #motpr355_woo_sale_product_date_info_activate_arrow > span:last-child {
+    width: 50px;
+    height: 4px;
+    background: red;
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 14px;
+    left: 20px;
+    bottom: 4px;
+}
